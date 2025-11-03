@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const loaderOverlay = document.getElementById("loaderOverlay");
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbwqN4pTF0tXwkPtHs2Ol2H4ghFhMq57KFifvey9RtuCnamOmeVSzpMcvEZYQ2cSpVmI/exec";
+    "https://script.google.com/macros/s/AKfycbzZ3yWmP1MNLyvyture7KXoIpcB6i1bccU0OQDwebz9SFU3aU-27bT9VBT6qf0adgat/exec";
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
