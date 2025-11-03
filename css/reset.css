@@ -1,0 +1,126 @@
+/* reset.css */
+/* Estilo reset moderno que elimina estilos por defecto del navegador */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+/* Eliminar estilos por defecto de listas */
+ol, ul {
+    list-style: none;
+}
+
+/* Enlaces sin subrayado */
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Botones y inputs sin estilos por defecto */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Tablas sin bordes por defecto */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Elementos de formulario consistentes */
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+/* Remover el estilo por defecto de detalles */
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+/* Mejor legibilidad para texto preformateado */
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Estilos para elementos ocultos */
+[hidden] {
+    display: none !important;
+}
+
+/* Focus styles para accesibilidad */
+:focus {
+    outline: 2px solid #00253E;
+    outline-offset: 2px;
+}
+
+/* Mejorar renderizado de fuentes */
+body {
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+}
+
+/* Scroll suave para navegadores webkit */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Prevenir desbordamiento horizontal */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilos para selección de texto */
+::selection {
+    background-color: #00253E;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background-color: #00253E;
+    color: #FFFFFF;
+}
